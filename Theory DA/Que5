@@ -1,0 +1,18 @@
+class OuterClass{
+    static int outerx = 10;
+    int outery = 20;
+    private static int outerprivate = 30;
+    
+    static class staticNestedClass{
+        void display(){
+            System.out.println("Outer x = "+outerx);
+            System.out.println("Outer private = "+outerprivate);
+        }
+    }
+}
+public class Que5{
+    public static void main(String args[]){
+        OuterClass.staticNestedClass nestedObject= new OuterClass.staticNestedClass();
+        nestedObject.display();
+    }
+}
