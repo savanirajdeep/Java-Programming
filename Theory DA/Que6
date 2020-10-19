@@ -1,0 +1,24 @@
+class Outer{
+    int num;
+    
+    // inner class
+    private class Inner {
+       public void print() {
+          System.out.println("This is an inner class");
+       }
+    }
+    
+    void display_Inner() {
+       Inner inner = new Inner ();
+       inner.print();
+    }
+ }
+    
+ public class Que6{
+ 
+    public static void main(String args[]) { 
+       Outer outer = new Outer ();
+       outer.display_Inner();
+    }
+ }
+ 
